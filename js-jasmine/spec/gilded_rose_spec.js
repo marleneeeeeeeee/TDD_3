@@ -64,6 +64,15 @@ describe("Gilded Rose", function() {
     const gildedRose = new Shop([ new Item("Sulfuras, Hand of Ragnaros", 3, 50) ]);
     const items = gildedRose.updateQuality();
     expect(items[0].sellIn).toEqual(3);
-  });
+    });
+
+    // TC_7.1:
+    it("Backstage passes increase in quality by 2 when sellIn <= 10", function() {
+    const gildedRose = new Shop([ new Item("Backstage passes to a TAFKAL80ETC concert", 10, 20) ]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].quality).toEqual(22);
+    });
+
+
 
 });

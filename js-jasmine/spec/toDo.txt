@@ -13,9 +13,9 @@ Test Suite 2:
 Test Suite 5:
 - Quality never over 50 
 
- Test Suite 5: Sulfuras
+ Test Suite 6: Sulfuras
  - Sulfuras Quality and SellIn doesnt change
 
- Test Suite 6: Backstage Passes
+ Test Suite 7: Backstage Passes
  - Quality increases by 2 when Sellin <=10, by 3 when sellIn <=5
  - Quality drops to 0 when sellIn < 0
