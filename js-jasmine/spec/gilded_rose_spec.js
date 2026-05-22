@@ -54,14 +54,14 @@ describe("Gilded Rose", function() {
 
   // TC_6.1:
     it("Sulfuras does not change in quality", function() {
-    const gildedRose = new Shop([ new Item("Sulfuras, Hand of Ragnaros", 3, 50) ]);
+    const gildedRose = new Shop([ new Item("Sulfuras, Hand of Ragnaros", 3, 80) ]);
     const items = gildedRose.updateQuality();
-    expect(items[0].quality).toEqual(50);
+    expect(items[0].quality).toEqual(80);
   });
 
     // TC_6.2:
     it("Sulfuras does not change in sellIn", function() {
-    const gildedRose = new Shop([ new Item("Sulfuras, Hand of Ragnaros", 3, 50) ]);
+    const gildedRose = new Shop([ new Item("Sulfuras, Hand of Ragnaros", 3, 80) ]);
     const items = gildedRose.updateQuality();
     expect(items[0].sellIn).toEqual(3);
     });
@@ -79,5 +79,21 @@ describe("Gilded Rose", function() {
     const items = gildedRose.updateQuality();
     expect(items[0].quality).toEqual(23);
     });
+
+    // TC_7.3:
+    it("Backstage passes drop to 0 when sellIn < 0", function() {
+    const gildedRose = new Shop([ new Item("Backstage passes to a TAFKAL80ETC concert", -1, 20) ]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].quality).toEqual(0);
+    });
+
+    // TC_8.1:
+    it("Sulfuras quality is always 80", function() {
+    const gildedRose = new Shop([ new Item("Sulfuras, Hand of Ragnaros", 3, 80) ]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].quality).toEqual(80);
+    });
+
+
 
 });
