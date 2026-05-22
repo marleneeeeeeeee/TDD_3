@@ -7,4 +7,12 @@ describe("Gilded Rose", function() {
     expect(items[0].quality).toEqual(0);
   });
 
+  // TC_1.2:
+  it("should update the sellIn of a normal item", function() {
+    const gildedRose = new Shop([ new Item("TC_1", 1, 1) ]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].sellIn).toEqual(0);
+  });
+  
+
 });
