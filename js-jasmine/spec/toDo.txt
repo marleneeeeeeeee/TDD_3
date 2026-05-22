@@ -22,5 +22,5 @@ Test Suite 5:
 
  Test Suite 8: Sulfuras Quality always 80
 
- Test Suite 9: Conjured Items
+ Test Suite 9: Conjured Items // in progress
  - __"Conjured"__ items degrade in `Quality` twice as fast as normal items
