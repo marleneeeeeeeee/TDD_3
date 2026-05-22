@@ -73,6 +73,11 @@ describe("Gilded Rose", function() {
     expect(items[0].quality).toEqual(22);
     });
 
-
+    // TC_7.2:
+    it("Backstage passes increase in quality by 3 when sellIn <= 5", function() {
+    const gildedRose = new Shop([ new Item("Backstage passes to a TAFKAL80ETC concert", 5, 20) ]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].quality).toEqual(23);
+    });
 
 });
