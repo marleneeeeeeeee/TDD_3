@@ -6,3 +6,13 @@ Test Suite 2:
 
  Test Suite 3:
  - Quality wird nie negativ
+
+ Test Suite 4: Aged Brie
+ - Aged Brie increases in quality as getting older
+
+ Test Suite 5: Sulfuras
+ - Sulfuras Quality and SellIn doesnt change
+
+ Test Suite 6: Backstage Passes
+ - Quality increases by 2 when Sellin <=10, by 3 when sellIn <=5
+ - Quality drops to 0 when sellIn < 0
