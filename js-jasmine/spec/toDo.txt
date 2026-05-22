@@ -1,5 +1,5 @@
 Test Suite 1:
- - normale artikel: sellIn und Quality singen täglich um 1
+ - normale artikel: sellIn und Quality singen täglich um 1 und nicht negativ
 
 Test Suite 2:
  - nach sellIn By Date sinkt Quality doppelt so schnell
