@@ -32,7 +32,7 @@ describe("Gilded Rose", function() {
 
     
   // TC_3.2:
-  it("quality is never negative", function() {
+  it("quality is never negative, when sellIn is less than 0", function() {
     const gildedRose = new Shop([ new Item("Item_1", -1, 1) ]);
     const items = gildedRose.updateQuality();
     expect(items[0].quality).toEqual(0);
@@ -44,6 +44,14 @@ describe("Gilded Rose", function() {
     const items = gildedRose.updateQuality();
     expect(items[0].quality).toEqual(2);
   });
+
+  // TC_5.1:
+    it("Quality of an item never exceeds 50", function() {
+    const gildedRose = new Shop([ new Item("Aged Brie", 3, 50) ]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].quality).toEqual(50);
+  });
+
 
 
 

@@ -10,6 +10,9 @@ Test Suite 2:
  Test Suite 4: Aged Brie
  - Aged Brie increases in quality as getting older
 
+Test Suite 5:
+- Quality never over 50 
+
  Test Suite 5: Sulfuras
  - Sulfuras Quality and SellIn doesnt change
 
