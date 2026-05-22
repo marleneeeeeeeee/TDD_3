@@ -21,3 +21,6 @@ Test Suite 5:
  - Quality drops to 0 when sellIn < 0
 
  Test Suite 8: Sulfuras Quality always 80
+
+ Test Suite 9: Conjured Items
+ - __"Conjured"__ items degrade in `Quality` twice as fast as normal items
